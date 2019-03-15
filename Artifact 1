@@ -1,0 +1,39 @@
+/*
+A class defines methods and variables for a specific object.
+In this simple class, I have the object rectangle which has the variables
+width and height and the methods getArea, getHeight, getWidth, and toString.
+getArean returns the area of a specific rectangle, getWidth returns the width
+of a specific rectangle, getHeight returns the height of a specific rectangle,
+and toString prints the rectangle with height and width.
+*/
+public class Rectangle 
+{
+    private int width;
+    private int height;
+    // This allows a new rectangle to be declared with values for width and height
+    public Rectangle(int rectWidth, int rectHeight)
+    {
+        width = rectWidth;
+        height = rectHeight;
+    }
+    //returns area of the rectangle
+    public int getArea()
+    {
+        return height * width;
+    }
+    
+    public int getHeight()
+    {
+        return width;
+    }
+    
+    public int getWidth()
+    {
+        return height;
+    }
+    
+    public String toString()
+    {
+        return "Rectangle with width: " + width + " and height: " + height;
+    }
+}
